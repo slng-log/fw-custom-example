@@ -58,8 +58,8 @@
 #define adc_channel_e_EFI_ADC_ERROR 50
 #define adc_channel_e_EFI_ADC_NONE 0
 #define adc_channel_e_EFI_ADC_TOTAL_CHANNELS 49
-#define adc_channel_e_enum 0="NONE",2="Analog Inputs 1 (A1)",11="Analog Inputs 10 (C0)",14="Analog Inputs 13 (C3)",15="Analog Inputs 14 (C4)",16="Analog Inputs 15 (C5)",3="Analog Inputs 2 (A2)",4="Analog Inputs 3 (A3)",5="Analog Inputs 4 (A4)",7="Analog Inputs 6 (A6)",8="Analog Inputs 7 (A7)",10="Analog Inputs 9 (B1)",9="On-board BARO (B0)",1="On-board Battery Sense (A0)",6="On-board MAP (A5)",12="Primary On-board O2 (C1)",13="Secondary On-board O2 (C2)"
-#define adc_channel_e_fullenum "NONE","On-board Battery Sense (A0)","Analog Inputs 1 (A1)","Analog Inputs 2 (A2)","Analog Inputs 3 (A3)","Analog Inputs 4 (A4)","On-board MAP (A5)","Analog Inputs 6 (A6)","Analog Inputs 7 (A7)","On-board BARO (B0)","Analog Inputs 9 (B1)","Analog Inputs 10 (C0)","Primary On-board O2 (C1)","Secondary On-board O2 (C2)","Analog Inputs 13 (C3)","Analog Inputs 14 (C4)","Analog Inputs 15 (C5)"
+#define adc_channel_e_enum 0="NONE",12="Analog Inputs 1 (A1)",13="Analog Inputs 2 (A2)",14="Analog Inputs 3 (A3)",11="On-board Battery Sense (A0)"
+#define adc_channel_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","On-board Battery Sense (A0)","Analog Inputs 1 (A1)","Analog Inputs 2 (A2)","Analog Inputs 3 (A3)"
 #define ADC_CHANNEL_NONE 0
 #define afr_sensor_s_size 20
 #define air_pressure_sensor_config_s_size 12
@@ -175,8 +175,8 @@
 #define boostType_e_auto_enum 0="OPEN_LOOP",1="CLOSED_LOOP"
 #define boostType_e_CLOSED_LOOP 1
 #define boostType_e_OPEN_LOOP 0
-#define brain_input_pin_e_enum 0="NONE",68="VR/Hall 1 (E2)",69="VR/Hall 2 (E3)",70="VR/Hall 3 (E4)"
-#define brain_input_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","VR/Hall 1 (E2)","VR/Hall 2 (E3)","VR/Hall 3 (E4)"
+#define brain_input_pin_e_enum 0="NONE",28="VR/Hall 1 (B10)",29="VR/Hall 2 (B11)"
+#define brain_input_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","VR/Hall 1 (B10)","VR/Hall 2 (B11)"
 #define brain_pin_diag_e_PIN_DRIVER_OFF 0x20
 #define brain_pin_diag_e_PIN_DRIVER_OVERTEMP 0x10
 #define brain_pin_diag_e_PIN_OK 0
@@ -1429,8 +1429,8 @@
 #define operation_mode_e_FOUR_STROKE_TWELVE_TIMES_CRANK_SENSOR 6
 #define operation_mode_e_OM_NONE 0
 #define operation_mode_e_TWO_STROKE 3
-#define output_pin_e_enum 0="NONE",32="B14 Output"
-#define output_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","B14 Output"
+#define output_pin_e_enum 0="NONE",30="Buzzer Output",22="M1 Output",23="M2 Output",24="M3 Output",25="M4 Output",18="M5 Output",19="M6 Output",3="UART4 RX Output",2="UART4 TX Output",12="USART1 RX Output",11="USART1 TX Output",5="USART2 RX Output",4="USART2 TX Output"
+#define output_pin_e_fullenum "NONE","INVALID","UART4 TX Output","UART4 RX Output","USART2 TX Output","USART2 RX Output","INVALID","INVALID","INVALID","INVALID","INVALID","USART1 TX Output","USART1 RX Output","INVALID","INVALID","INVALID","INVALID","INVALID","M5 Output","M6 Output","INVALID","INVALID","M1 Output","M2 Output","M3 Output","M4 Output","INVALID","INVALID","INVALID","INVALID","Buzzer Output"
 #define PACK_ADD_TEMPERATURE 40
 #define PACK_MULT_AFR 1000
 #define PACK_MULT_AFR_CFG 10
@@ -1537,7 +1537,7 @@
 #define SentInput_NONE 0
 #define show_tcu_gauges false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 3495059306
+#define SIGNATURE_HASH 838462993
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1571,8 +1571,8 @@
 #define stft_state_e_stftDisabledTpsAccel 8
 #define stft_state_e_stftDisabledTuning 2
 #define stft_state_e_stftEnabled 0
-#define switch_input_pin_e_enum 0="NONE",68="VR/Hall 1 (E2)",69="VR/Hall 2 (E3)",70="VR/Hall 3 (E4)"
-#define switch_input_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","VR/Hall 1 (E2)","VR/Hall 2 (E3)","VR/Hall 3 (E4)"
+#define switch_input_pin_e_enum 0="NONE",28="VR/Hall 1 (B10)",29="VR/Hall 2 (B11)"
+#define switch_input_pin_e_fullenum "NONE","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","INVALID","VR/Hall 1 (B10)","VR/Hall 2 (B11)"
 #define TABLE_2_LOAD_SIZE 8
 #define TABLE_2_RPM_SIZE 8
 #define TABLE_3_LOAD_SIZE 8
@@ -2106,7 +2106,7 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2025.10.19.F405Test.3495059306"
+#define TS_SIGNATURE "rusEFI main.2025.10.20.F405Test.838462993"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_TEST_COMMAND 't'
