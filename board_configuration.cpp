@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "board_overrides.h"
 
+// board-specific configuration setup
 Gpio getCommsLedPin() {
 	return Gpio::C13;
 }
@@ -13,8 +14,21 @@ Gpio getWarningLedPin() {
 	return Gpio::C15;
 }
 
-// board-specific configuration setup
+static void setupVbatt() {
+	// 5.6k high side/10k low side = 1.56 ratio divider
+	engineConfiguration->analogInputDividerCoefficient = 1.56f;
+
+	// 10k high side/ 1k low side
+	engineConfiguration->vbattDividerCoeff = (10 + 1) / 1;
+
+	// Battery sense on PC0
+	engineConfiguration->vbattAdcChannel = EFI_ADC_10;
+
+	engineConfiguration->adcVcc = 3.3f;
+}
+
 static void customBoardDefaultConfiguration() {
+//void setBoardDefaultConfiguration(void) {
 //	engineConfiguration->injectionPins[0] = Gpio::A0;
 //	engineConfiguration->injectionPins[1] = Gpio::A1;
 //	engineConfiguration->injectionPins[2] = Gpio::A2;
@@ -34,22 +48,7 @@ static void customBoardDefaultConfiguration() {
 	engineConfiguration->map.sensor.hwChannel = EFI_ADC_13;
 	engineConfiguration->clt.adcChannel = EFI_ADC_11;
 	engineConfiguration->iat.adcChannel = EFI_ADC_12;
-}
 
-static void setupVbatt() {
-	// 5.6k high side/10k low side = 1.56 ratio divider
-	engineConfiguration->analogInputDividerCoefficient = 1.56f;
-
-	// 10k high side/ 1k low side
-	engineConfiguration->vbattDividerCoeff = (10 + 1) / 1;
-
-	// Battery sense on PC0
-	engineConfiguration->vbattAdcChannel = EFI_ADC_10;
-
-	engineConfiguration->adcVcc = 3.3f;
-}
-
-void setBoardConfigOverrides() {
 	setupVbatt();
 //	setEtbConfig();
 //	setStepperConfig();
