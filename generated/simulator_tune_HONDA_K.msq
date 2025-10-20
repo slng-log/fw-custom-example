@@ -561,7 +561,7 @@
         <constant name="brakePedalPin">"NONE"</constant>
         <constant name="brakePedalPinMode">"PULLUP"</constant>
         <constant digits="0" name="byFirmwareVersion" units="index">0.0</constant>
-        <constant digits="0" name="calibrationBirthday" units="">2.0251019E7</constant>
+        <constant digits="0" name="calibrationBirthday" units="">2.025102E7</constant>
         <constant digits="0" name="camDecoder2jzPosition" units="angle">95.0</constant>
         <constant digits="0" name="camDecoder2jzPrecision" units="">40.0</constant>
         <constant name="camInputs1">"NONE"</constant>
@@ -4915,7 +4915,7 @@ end</constant>
         <constant digits="1" name="vvtOffsets3" units="value">0.0</constant>
         <constant digits="1" name="vvtOffsets4" units="value">0.0</constant>
         <constant digits="0" name="vvtOutputFrequency" units="Hz">300.0</constant>
-        <constant name="vvtPins1">"INVALID"</constant>
+        <constant name="vvtPins1">"UART4 TX Output"</constant>
         <constant name="vvtPins2">"NONE"</constant>
         <constant name="vvtPins3">"NONE"</constant>
         <constant name="vvtPins4">"NONE"</constant>
@@ -5049,7 +5049,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20251017" nPages="1" signature="rusEFI main.2025.10.19.F405Test.3495059306" version="5.0"/>
+    <versionInfo firmwareInfo="20251017" nPages="1" signature="rusEFI main.2025.10.20.F405Test.838462993" version="5.0"/>
     <bibliography author="rusEFI 20251017" writeDate="date"/>
     <settings/>
     <userComments/>
