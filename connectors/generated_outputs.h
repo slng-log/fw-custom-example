@@ -4,6 +4,30 @@
 #pragma once
 
 Gpio GENERATED_OUTPUTS = {
-	Gpio::B14, // B14 Output
-// "B14 Output",
+	Gpio::A0, // UART4 TX Output
+	Gpio::A1, // UART4 RX Output
+	Gpio::A2, // USART2 TX Output
+	Gpio::A3, // USART2 RX Output
+	Gpio::A9, // USART1 TX Output
+	Gpio::A10, // USART1 RX Output
+	Gpio::B0, // M5 Output
+	Gpio::B1, // M6 Output
+	Gpio::B4, // M1 Output
+	Gpio::B5, // M2 Output
+	Gpio::B6, // M3 Output
+	Gpio::B7, // M4 Output
+	Gpio::B12, // Buzzer Output
+// "UART4 TX Output",
+// "UART4 RX Output",
+// "USART2 TX Output",
+// "USART2 RX Output",
+// "USART1 TX Output",
+// "USART1 RX Output",
+// "M5 Output",
+// "M6 Output",
+// "M1 Output",
+// "M2 Output",
+// "M3 Output",
+// "M4 Output",
+// "Buzzer Output",
 }
