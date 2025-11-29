@@ -5010,7 +5010,7 @@ end</constant>
         <constant digits="1" name="vvtOffsets3" units="value">0.0</constant>
         <constant digits="1" name="vvtOffsets4" units="value">0.0</constant>
         <constant digits="0" name="vvtOutputFrequency" units="Hz">300.0</constant>
-        <constant name="vvtPins1">"INVALID"</constant>
+        <constant name="vvtPins1">"UART4 TX Output"</constant>
         <constant name="vvtPins2">"NONE"</constant>
         <constant name="vvtPins3">"NONE"</constant>
         <constant name="vvtPins4">"NONE"</constant>
@@ -5144,7 +5144,7 @@ end</constant>
 </constant>
         <constant name="yesUnderstandLocking">"no"</constant>
     </page>
-    <versionInfo firmwareInfo="20251118" nPages="1" signature="rusEFI main.2025.11.29.xyz.3066904579" version="5.0"/>
+    <versionInfo firmwareInfo="20251118" nPages="1" signature="rusEFI main.2025.11.29.f405test.1466364280" version="5.0"/>
     <bibliography author="rusEFI 20251118" writeDate="date"/>
     <settings/>
     <userComments/>
